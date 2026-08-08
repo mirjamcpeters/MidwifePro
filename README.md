@@ -3,6 +3,8 @@
 Eine sehr schlanke, mobile-first Lern-App zur täglichen Vorbereitung auf das Staatsexamen.
 Kein Login, kein Backend, keine Navigation – nur eine ruhige Oberfläche und 5 Minuten Lernen pro Tag.
 
+**Live:** https://mirjamcpeters.github.io/MidwifePro/ (via GitHub Pages, siehe unten)
+
 ## Ablauf
 
 ```
@@ -49,6 +51,28 @@ wenn der "Nur-HTTPS-Modus" aktiv ist. Das lässt sich pro Website abschalten:
 
 Danach lässt sich die Seite ganz normal in Safari öffnen und über "Zum Home-Bildschirm hinzufügen"
 als App-Icon ablegen (öffnet dann ohne Adressleiste, wie eine echte App).
+
+## Hosting über GitHub Pages
+
+Das Repo enthält bereits einen GitHub-Actions-Workflow (`.github/workflows/pages.yml`), der die App
+bei jedem Push auf `main` automatisch auf GitHub Pages veröffentlicht – kostenlos, mit gültigem
+HTTPS-Zertifikat, ohne eigenen Server oder Tunnel.
+
+**Einmaliger manueller Schritt** (das kann nur ein eingeloggter Repo-Owner/Admin machen, nicht per
+Skript automatisierbar):
+
+1. Im Repo auf GitHub: **Settings** → **Pages**.
+2. Unter **Build and deployment** → **Source** → **GitHub Actions** auswählen.
+3. Einmal auf **Save**. Der vorhandene Workflow läuft danach automatisch bei jedem Push.
+
+Nach ein bis zwei Minuten ist die App erreichbar unter:
+
+```
+https://mirjamcpeters.github.io/MidwifePro/
+```
+
+Der Fortschritt (Fragen-Streak, Trefferquote) bleibt dabei weiterhin rein lokal im Browser jedes
+Geräts gespeichert – GitHub Pages hostet nur die statischen Dateien, es gibt keinen Server-Zustand.
 
 ## Projektstruktur
 
