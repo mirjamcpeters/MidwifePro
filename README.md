@@ -1,6 +1,7 @@
 # MidwifePro – MVP Lern-App für das Hebammen-Staatsexamen
 
 [![Deploy to GitHub Pages](https://github.com/mirjamcpeters/MidwifePro/actions/workflows/pages.yml/badge.svg)](https://github.com/mirjamcpeters/MidwifePro/actions/workflows/pages.yml)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fmirjamcpeters.github.io%2FMidwifePro%2F&label=live%20app)](https://mirjamcpeters.github.io/MidwifePro/)
 
 Eine sehr schlanke, mobile-first Lern-App zur täglichen Vorbereitung auf das Staatsexamen.
 Kein Login, kein Backend, keine Navigation – nur eine ruhige Oberfläche und 5 Minuten Lernen pro Tag.
